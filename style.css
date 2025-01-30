@@ -1,0 +1,110 @@
+.left {
+  width: 300px;
+  background-color: #f5f5dc;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  z-index: 100;
+}
+
+.right {
+  margin-left: 500px;
+  width: calc(100% - 340px);
+  height: 100vh;
+  text-align: left;
+  overflow-y: auto;
+  padding: 0 3rem;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  position: relative;
+}
+
+body,
+html {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color:  #8A2BE2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.left,
+.right {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.left img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.right article,
+.left article {
+  display: flex;
+}
+
+.right {
+  max-width: 1000px;
+  text-align: left;
+}
+
+.right h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.right p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.textLeft,
+.textRight {
+  margin: 0 1rem;
+  width: 50%;
+}
+
+.textLeft p {
+  font-size: 1rem;
+  text-align: left;
+  color: #555;
+  line-height: 1.6;
+}
+
+.textRight p {
+  font-size: 1rem;
+  text-align: left;
+  color: #555;
+}
+
+.textFinal {
+  margin-bottom: 2rem;
+}
+
+h1, h2{
+  color:  #333;
+}
+
+strong {
+  color: #333;
+}

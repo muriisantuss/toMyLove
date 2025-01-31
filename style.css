@@ -8,7 +8,7 @@
 }
 
 .right {
-  margin-left: 500px;
+  flex: 1;
   width: calc(100% - 340px);
   height: 100vh;
   text-align: left;
@@ -24,7 +24,7 @@ html {
   box-sizing: border-box;
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color:  #8A2BE2;
+  background-color: #8a2be2;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -32,10 +32,10 @@ html {
   overflow: hidden;
 }
 
-
 .container {
   display: flex;
-  justify-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 100%;
   max-width: 1200px;
   padding: 20px;
@@ -51,6 +51,8 @@ html {
 .left img {
   width: 300px;
   height: 300px;
+  max-width: 300px;
+  max-height: 300px;
   border-radius: 50%;
   margin-bottom: 1rem;
   object-fit: cover;
@@ -82,6 +84,7 @@ html {
 .textRight {
   margin: 0 1rem;
   width: 50%;
+  min-width: 40%;
 }
 
 .textLeft p {
@@ -101,10 +104,107 @@ html {
   margin-bottom: 2rem;
 }
 
-h1, h2{
-  color:  #333;
+h1,
+h2 {
+  color: #333;
 }
 
 strong {
   color: #333;
+}
+
+@media (max-width: 1024px) {
+  .right {
+    padding: 1.5rem;
+  }
+  .left img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+
+  .left article {
+    flex-wrap: wrap;
+  }
+  ::-webkit-scrollbar {
+    width: 0px; /* Oculta a barra de rolagem */
+    height: 0px;
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .texts article {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .textLeft,
+  .textRight {
+    width: 100%;
+  }
+}
+
+@media (max-width: 630px) {
+  .left {
+    overflow-y: auto;
+  }
+
+  .left img {
+    max-width: 200px;
+    max-height: 200px;
+    margin: auto;
+  }
+
+  .container {
+    flex-wrap: none;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    padding: 30px;
+  }
+
+  body,
+  html {
+    overflow-y: scroll;
+    background-color: #5e8c31;
+
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px; /* Oculta a barra de rolagem */
+    height: 0px;
+    display: none;
+  }
+
+  .left,
+  .right {
+    width: 80%;
+    padding: 1rem;
+  }
+
+  .right h1 {
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 0 0.5rem;
+  }
+
+  .right h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .left p {
+    font-size: 1.1rem;
+  }
+
+  .right p {
+    font-size: 1.1rem;
+    padding: 0 0.5rem;
+  }
+
+  .textFinal {
+    text-align: left;
+  }
 }

@@ -2,7 +2,7 @@
 const namorada = {
   nome: "Yara Carolyne Barreto Melo",
 
-  idade: "19 anos",
+  idade: "18 anos",
   naturalidade: "Itu",
   altura: "1.77m",
   corFavorita: "Roxo",
@@ -29,7 +29,7 @@ const namorada = {
 
 function exibirDetalhes() {
   document.getElementById('nome').innerHTML = `<strong>Nome:</strong> ${namorada.nome}`;
-  document.getElementById('idade').innerHTML = `<strong>Idade:</strong> ${namorada.idade} anos`;
+  document.getElementById('idade').innerHTML = `<strong>Idade:</strong> ${namorada.idade}`;
   document.getElementById('naturalidade').innerHTML = `<strong>Naturalidade:</strong> ${namorada.naturalidade}`;
   document.getElementById('altura').innerHTML = `<strong>Altura:</strong> ${namorada.altura}`;
   document.getElementById('corFavorita').innerHTML = `<strong>Cor Favorita:</strong> ${namorada.corFavorita}`;

@@ -153,13 +153,14 @@ strong {
   .textRight {
     width: 100%;
   }
-  .left .textLeft {
+  .left .textLeft, .textRight{
     margin-top: 1rem;
+    margin-left: 0.6rem;
   }
   .left .textLeft p,
   .left .textRight p{
     padding: 0;
-    margin: 0.5rem 1rem;
+    margin: 0.7rem 0rem;
     line-height: 0.9rem;
   }
 
